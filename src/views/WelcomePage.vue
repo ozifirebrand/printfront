@@ -5,7 +5,7 @@
 
 <script>
 import ButtonComponent from "@/components/Button";
-import OrderPage from "@/components/OrderPage";
+import OrderPage from "@/views/OrderPage";
 const routes = {
   "/order-page": OrderPage
 }
