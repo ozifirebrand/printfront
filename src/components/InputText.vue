@@ -5,7 +5,7 @@
 <script>
 export default {
   name: "InputComponent",
-  props:['placeholder']
+  placeholder: ''
 }
 </script>
 
