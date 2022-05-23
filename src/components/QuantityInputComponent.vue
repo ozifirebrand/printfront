@@ -1,11 +1,12 @@
 <template>
-<input type="text">
+  <input type="text">
+
 </template>
 
 <script>
 export default {
-  name: "InputComponent",
-  placeholder: ''
+  name: "QuantityInputComponent",
+  placeholder: 0,
 }
 </script>
 

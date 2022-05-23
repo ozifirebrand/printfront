@@ -1,36 +1,49 @@
 <template>
-  <h1 id="welcome-text">Welcome to Printer</h1>
-  <a href="/order-page"><ButtonComponent placeholder="Make order"/></a>
+      <div id="center-circle">ORDER FOR<br>
+        <span style="position:relative; top: 10px; color:#FDC537; font-size: 37px; font-weight: normal">
+        PRINTS
+      </span>
+      </div>
+
+      <router-link to="/order-page">
+        <button id="click-here">HERE!</button>
+      </router-link>
+    <router-view/>
+
 </template>
 
 <script>
-import ButtonComponent from "@/components/Button";
-import OrderPage from "@/views/OrderPage";
-const routes = {
-  "/order-page": OrderPage
-}
 export default {
   name: "WelcomePage",
-  components: {ButtonComponent},
-  data(){
-    return{
-      currentPath: window.location.hash
-    }
-  },
-
-  computed:{
-    currentView(){
-      return routes[this.currentPath.slice(1)]
-    }
-  },
-  mounted() {
-    window.addEventListener("hashchange", ()=>{
-      this.currentPath = window.location.hash
-    })
+  components: {
   }
 }
 </script>
-
+<!--#211432
+-->
 <style scoped>
+#center-circle{
+  top: 80px;
+  position: relative;
+  width: 190px;
+  margin: auto;
+  border-radius: 50%;
+  background-color:#211432;
+  padding: 60px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: white ;
+}
 
+#click-here{
+  position: relative;
+  width: 70px;
+  margin: 120px auto auto;
+  padding: 24px 0;
+  border-radius: 50%;
+  background-color: #211432;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
 </style>
