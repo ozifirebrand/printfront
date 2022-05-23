@@ -1,19 +1,19 @@
 <template>
-<div>
-  <InputComponent placeholder="Description"/>
-  <ButtonComponent placeholder="Order"/>
-</div>
+    <InputComponent placeholder="Upload Name"></InputComponent>
+    <InputComponent placeholder="Email"></InputComponent>
+<!--    <div id="home-button">-->
+<!--      P R I N T A P P-->
+<!--    </div>-->
+
 </template>
 
 <script>
 import InputComponent from "@/components/InputText";
-import ButtonComponent from "@/components/Button";
 export default {
   name: "OrderPage",
-  components: {ButtonComponent, InputComponent}
+  components: {InputComponent},
 }
 </script>
 
 <style scoped>
-
 </style>
