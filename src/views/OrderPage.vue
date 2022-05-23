@@ -1,10 +1,6 @@
 <template>
     <InputComponent placeholder="Upload Name"></InputComponent>
     <InputComponent placeholder="Email"></InputComponent>
-<!--    <div id="home-button">-->
-<!--      P R I N T A P P-->
-<!--    </div>-->
-
 </template>
 
 <script>
